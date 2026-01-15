@@ -1231,8 +1231,10 @@ const App = {
     const breakdown=[
       {label:`Room rate (${money(nightly)}/night × ${nights} night${nights===1?"":"s"})`, amount:roomCost},
       {label:`Meal add-on (${money(mealNight)}/night × ${nights} night${nights===1?"":"s"})`, amount:mealCost},
-      {label:`Airport pickup/drop (${airport})`, amount:airportCost},
-      {label:`Domestic air ticket (${ticket})`, amount:ticketCost},
+      {label:`Airport pickup/drop (${airportPickup}) – $14 Round Trip`, 
+  amount: airportCost 
+},
+      {label:`Domestic air ticket (${domesticTicket}) – $310 per person (round trip)`,
     ];
     return { total, nights, breakdown };
   },
@@ -1738,4 +1740,5 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
