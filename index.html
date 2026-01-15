@@ -729,7 +729,7 @@ const PRICING = {
     if(mealPlan === "Fullboard") return 40;
     return 0; // No meal plan / Bed and breakfast
   },
-  airportOneTime(v){ return v === "Yes" ? 20 : 0; },
+  airportOneTime(v){ return v === "Yes" ? 14 : 0; },
   domesticTicketOneTime(v, pax){ return v === "Required" ? 310 * pax : 0; }
 };
 
@@ -1739,6 +1739,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
 
 
